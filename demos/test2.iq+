@@ -1,0 +1,56 @@
+//
+// This file is part of the IQ+ Compiler
+// Copyright (C) 2009 Dr.Kameleon
+// 
+// Description
+// ------------------
+// IQ+ Example Code
+// 
+// =========================================
+// test2.iq+
+// =========================================
+//
+
+[library] math =
+{
+	$export	= abs | mod | power;
+
+	[int] power(int) = X*X;
+
+	[int] abs(int) = 
+	{
+		if :: X+1 >> 0 :: { $return = X; }
+		else :: { $return = -X; }
+	}
+
+	[int] mod(int,int) = X-(X/Y)*Y;
+}
+
+[program] test2 = 
+{
+	$entry  = main;
+	$import = screen | math;
+
+	[proc] main = 
+	{
+		[bool] done = "false";
+		[int] someVar;
+	
+		loopif :: done /= "true" ::
+		{
+			print "give me a number (0 to exit) :";
+	
+			[int] i = readInt();
+
+			if :: i == 0 ::
+			{
+				done = "true";
+				escape;
+			}
+
+			print "abs(_i_)=_abs(i)_\n";
+			print "pow(_i_)=_pow(i)_\n";
+		}
+	}
+}
+

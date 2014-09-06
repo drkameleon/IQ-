@@ -1,0 +1,34 @@
+//
+// This file is part of the IQ+ Compiler / Examples
+//
+// Description:
+// 	example code for IQ+
+//
+// Filename:
+//	cmp1.iq+
+//
+// -------------------------------------------------
+// by Dr.Kameleon
+//
+
+[_int] getNum = {
+	[int] k = 3;
+
+	$return = k*2;
+}
+
+[proc] printSum = {
+	[int] a = 2;
+
+	[int] c = ( 2 + getNum() ) * a;
+
+	if :: c>>2 :: {
+		print_int c;
+		print_nl;
+	}
+}
+
+[proc] main = {
+	printSum;
+}
+

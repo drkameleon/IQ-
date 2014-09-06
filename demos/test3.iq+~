@@ -1,0 +1,23 @@
+//
+// This file is part of the IQ+ Compiler
+// Copyright (C) 2009 Dr.Kameleon
+// 
+// Description
+// ------------------
+// IQ+ Example Code
+// 
+// =========================================
+// test3.iq+
+// =========================================
+//
+
+
+[program] test3 =
+{
+	$entry = main;
+
+	[proc] main =
+	{
+		print "Hello World!";
+	}
+}

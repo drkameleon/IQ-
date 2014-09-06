@@ -1,0 +1,16 @@
+//
+// This file is part of the IQ+ Compiler
+// Copyright (C) 2009 Dr.Kameleon
+// 
+// Description
+// ------------------
+// IQ+ Example Code
+// 
+// =========================================
+// test4.iq+
+// =========================================
+//
+
+[int] x = 10*5+2;
+
+print "Hello World", "X=", x;

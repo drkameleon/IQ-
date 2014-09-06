@@ -1,0 +1,194 @@
+<root>
+<block>
+<statement index="0" >
+<function_decl>
+<identifier>
+getNum
+</identifier>
+<type>
+_int
+</type>
+<args>
+none
+</args>
+<content>
+<block>
+<statement index="0" >
+<assignment>
+<variable>
+<identifier>
+k
+</identifier>
+<type>
+int
+</type>
+</variable>
+<args>
+none
+</args>
+<content>
+<expression>
+3
+</expression>
+</content>
+</assignment>
+</statement>
+<statement index="1" >
+<assignment>
+<identifier>
+$return
+</identifier>
+<type>
+system
+</type>
+<args>
+none
+</args>
+<content>
+<expression>
+<operator param="*" >
+<left>
+k
+</left>
+<right>
+2
+</right>
+</operator>
+</expression>
+</content>
+</assignment>
+</statement>
+</block>
+</content>
+</function_decl>
+</statement>
+<statement index="1" >
+<procedure_decl>
+<identifier>
+printSum
+</identifier>
+<args>
+none
+</args>
+<content>
+<block>
+<statement index="0" >
+<assignment>
+<variable>
+<identifier>
+a
+</identifier>
+<type>
+int
+</type>
+</variable>
+<args>
+none
+</args>
+<content>
+<expression>
+2
+</expression>
+</content>
+</assignment>
+</statement>
+<statement index="1" >
+<assignment>
+<variable>
+<identifier>
+c
+</identifier>
+<type>
+int
+</type>
+</variable>
+<args>
+none
+</args>
+<content>
+<expression>
+<operator param="*" >
+<left>
+<operator param="+" >
+<left>
+2
+</left>
+<right>
+getNum
+</right>
+</operator>
+</left>
+<right>
+a
+</right>
+</operator>
+</expression>
+</content>
+</assignment>
+</statement>
+<statement index="2" >
+<if>
+<condition>
+<operator param=">>" >
+<expression index="0" >
+c
+</expression>
+<expression index="1" >
+2
+</expression>
+</operator>
+</condition>
+<block>
+<block>
+<statement index="0" >
+<procedure>
+<identifier>
+print_int
+</identifier>
+<paramlist>
+<param index="0" >
+<expression>
+c
+</expression>
+</param>
+</paramlist>
+</procedure>
+</statement>
+<statement index="1" >
+<procedure>
+<identifier>
+print_nl
+</identifier>
+</procedure>
+</statement>
+</block>
+</block>
+</if>
+</statement>
+</block>
+</content>
+</procedure_decl>
+</statement>
+<statement index="2" >
+<procedure_decl>
+<identifier>
+main
+</identifier>
+<args>
+none
+</args>
+<content>
+<block>
+<statement index="0" >
+<procedure>
+<identifier>
+printSum
+</identifier>
+</procedure>
+</statement>
+</block>
+</content>
+</procedure_decl>
+</statement>
+</block>
+</root>
